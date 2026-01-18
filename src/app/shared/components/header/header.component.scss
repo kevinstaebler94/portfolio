@@ -1,0 +1,55 @@
+header {
+  padding: 1em 5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-size: 1.75rem;
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+      cursor: pointer;
+    }
+  }
+
+  .img-wrap {
+    position: relative;
+
+    img {
+      height: 150px;
+      width: 200px;
+    }
+
+    .img-normal {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+
+    .img-hover {
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover .img-normal {
+      opacity: 0;
+    }
+
+    &:hover .img-hover {
+      opacity: 1;
+    }
+  }
+}
