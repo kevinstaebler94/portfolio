@@ -3,6 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-image: linear-gradient(to right, #161414, #08463b);
 
   nav {
     display: flex;
@@ -26,8 +27,8 @@ header {
     position: relative;
 
     img {
-      height: 150px;
       width: 200px;
+      cursor: pointer;
     }
 
     .img-normal {

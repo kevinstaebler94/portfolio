@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './shared/components/header/header.component';
-import { LandingComponent } from './features/landing/landing/landing.component';
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { LandingComponent } from "./features/landing/landing/landing.component";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, LandingComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  selector: "app-root",
+  imports: [RouterOutlet, LandingComponent],
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
 })
 export class AppComponent {
-  title = 'project-portfolio';
+  title = "project-portfolio";
 }
