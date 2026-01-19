@@ -33,4 +33,23 @@
       border-radius: 25px;
     }
   }
+
+  .cross-layer-container {
+    background-color: blueviolet;
+    width: 100%;
+    height: fit-content;
+    order: 4;
+    rotate: -2deg;
+    margin-top: 15em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #434343;
+
+    span {
+      font-size: 2.5rem;
+      color: #3dcfb6;
+      padding: 0.25em 0;
+    }
+  }
 }

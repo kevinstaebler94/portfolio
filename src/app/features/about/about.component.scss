@@ -1,0 +1,58 @@
+.section-wrapper {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+
+  .portrait-wrapper {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .portrait-bg {
+      position: absolute;
+      height: 600px;
+      width: 600px;
+      background: url("/assets/images/portrait-bg.svg") no-repeat center/cover;
+      z-index: 1;
+      top: 18%;
+      left: 24%;
+      border-radius: 35px;
+    }
+
+    .portrait-container {
+      border-radius: 35px;
+      background-color: white;
+      position: relative;
+      height: 600px;
+      width: 600px;
+      z-index: 2;
+      top: -5%;
+      left: 10%;
+    }
+  }
+
+  .about-wrapper {
+    height: 100%;
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-me-container {
+    border-radius: 35px;
+    background-color: white;
+    position: relative;
+    height: 600px;
+    width: 600px;
+  }
+}
