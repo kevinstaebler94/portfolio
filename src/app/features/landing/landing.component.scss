@@ -3,19 +3,19 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to right, #161414, #08463b);
-  padding-top: 10em;
+  background-image: linear-gradient(to right, #1c1c1c, #08463b);
+  padding-top: 8em;
 
   h1 {
     order: 2;
-    font-size: 8rem;
+    font-size: 5rem;
     color: whitesmoke;
   }
 
   h2 {
     order: 1;
-    font-size: 3rem;
+    font-size: 1.75rem;
+    font-weight: 400;
     color: whitesmoke;
   }
 
@@ -23,10 +23,10 @@
     order: 3;
     display: flex;
     gap: 3.5em;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
 
     span {
-      font-size: 1.5rem;
+      font-size: 0.75rem;
       padding: 0.5em 1em;
       color: whitesmoke;
       border: 2px solid whitesmoke;
@@ -39,15 +39,15 @@
     width: 100%;
     height: fit-content;
     order: 4;
-    rotate: -2deg;
-    margin-top: 15em;
+    rotate: -1.5deg;
+    margin: 7.5em 0 2.5em 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #434343;
+    background-color: rgb(67, 67, 67, 0.65);
 
     span {
-      font-size: 2.5rem;
+      font-size: 1.25rem;
       color: #3dcfb6;
       padding: 0.25em 0;
     }

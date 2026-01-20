@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
+  background-color: #1c1c1c;
 
   .portrait-wrapper {
     height: 100%;
@@ -17,12 +17,12 @@
 
     .portrait-bg {
       position: absolute;
-      height: 600px;
-      width: 600px;
+      height: 400px;
+      width: 400px;
       background: url("/assets/images/portrait-bg.svg") no-repeat center/cover;
       z-index: 1;
-      top: 18%;
-      left: 24%;
+      top: 10%;
+      left: 15%;
       border-radius: 35px;
     }
 
@@ -30,10 +30,10 @@
       border-radius: 35px;
       background-color: white;
       position: relative;
-      height: 600px;
-      width: 600px;
+      height: 400px;
+      width: 400px;
       z-index: 2;
-      top: -5%;
+      top: -22%;
       left: 10%;
     }
   }
@@ -41,18 +41,26 @@
   .about-wrapper {
     height: 100%;
     width: 50%;
-    background-color: black;
+    // background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
 
-  .about-me-container {
-    border-radius: 35px;
-    background-color: white;
-    position: relative;
-    height: 600px;
-    width: 600px;
+    .about-me-container {
+      border-radius: 35px;
+      background-color: white;
+      position: relative;
+      height: 400px;
+      width: 400px;
+      top: -22%;
+      left: 10%;
+    }
+
+    span {
+      color: whitesmoke;
+      background-color: aqua;
+      z-index: 3;
+    }
   }
 }
