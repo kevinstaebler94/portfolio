@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: linear-gradient(to right, #1c1c1c, #08463b);
   padding-top: 8em;
 
   h1 {
@@ -36,10 +35,10 @@
 
   .cross-layer-container {
     background-color: blueviolet;
-    width: 100%;
+    width: 105%;
     height: fit-content;
     order: 4;
-    rotate: -1.5deg;
+    transform: rotate(-1.5deg);
     margin: 7.5em 0 2.5em 0;
     display: flex;
     justify-content: space-around;
