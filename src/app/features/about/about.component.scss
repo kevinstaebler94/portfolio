@@ -1,65 +1,57 @@
 .section-wrapper-about {
-  width: 100%;
   height: 1000px;
+  background-color: black;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #1c1c1c;
 
-  .portrait-wrapper {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-    .portrait-bg {
-      position: absolute;
-      height: 400px;
-      width: 400px;
-      background: url("/assets/images/portrait-bg.svg") no-repeat center/cover;
-      z-index: 1;
-      top: 10%;
-      left: 15%;
-      border-radius: 35px;
-    }
-
-    .portrait-container {
-      border-radius: 35px;
-      background-color: white;
-      position: relative;
-      height: 400px;
-      width: 400px;
-      z-index: 2;
-      top: -22%;
-      left: 10%;
-    }
+  .portrait-wrapper,
+  .about-wrapper {
+    background-color: #1c1c1c;
+    flex: 1;
   }
 
   .about-wrapper {
-    height: 100%;
-    width: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: end;
     align-items: center;
-    justify-content: center;
-
-    .about-me-container {
-      border-radius: 35px;
-      background-color: white;
-      position: relative;
-      height: 400px;
-      width: 400px;
-      top: -22%;
-      left: 10%;
-    }
 
     h1 {
-      color: whitesmoke;
-      background-color: aqua;
-      z-index: 3;
+      color: #3dcfb6;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 599px;
+      text-align: start;
+    }
+
+    .about-me-container {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      max-height: 612px;
+      max-width: 599px;
+      background-color: whitesmoke;
+      margin-bottom: 5em;
+
+      h2 {
+        text-align: start;
+        width: 100%;
+        padding: 2em;
+      }
+    }
+  }
+
+  .portrait-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+
+    img {
+      max-height: 612px;
+      max-width: 599px;
+      height: 100%;
+      width: 100%;
     }
   }
 }
