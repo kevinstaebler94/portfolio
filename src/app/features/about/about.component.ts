@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
+// import { aboutData } from "./data";
 
 @Component({
-  selector: 'app-about',
+  selector: "app-about",
   imports: [],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  templateUrl: "./about.component.html",
+  styleUrl: "./about.component.scss",
 })
 export class AboutComponent {
+  public aboutData = [];
 
+  constructor() {}
 }

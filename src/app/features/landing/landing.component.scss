@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   padding-top: 8em;
+  background-image: linear-gradient(to right, #1c1c1c, #08463b);
 
   h1 {
     order: 2;
@@ -35,7 +36,7 @@
 
   .cross-layer-container {
     background-color: blueviolet;
-    width: 105%;
+    width: 100.1%;
     height: fit-content;
     order: 4;
     transform: rotate(-1.5deg);
