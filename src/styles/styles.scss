@@ -3,11 +3,14 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  height: 100vh;
+  max-width: 1440px;
   width: 100%;
-  max-width: 1920px;
+  height: 100vh;
   margin: 0 auto;
-  background-color: #1c1c1c;
-  overflow-x: hidden;
+  background-color: black;
+}
+
+@media (max-width: 1100) {
 }

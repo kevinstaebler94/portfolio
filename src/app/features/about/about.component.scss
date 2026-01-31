@@ -1,57 +1,73 @@
 .section-wrapper-about {
-  height: 1000px;
-  background-color: black;
+  background-color: #1c1c1c;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  max-height: 1000px;
+  height: 100%;
+  padding: 0 2em;
 
-  .portrait-wrapper,
-  .about-wrapper {
-    background-color: #1c1c1c;
+  .portrait-wrapper {
+    position: relative;
     flex: 1;
-  }
-
-  .about-wrapper {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
+    justify-content: start;
 
-    h1 {
-      color: #3dcfb6;
-      margin: 0 0 1em 0;
-      padding: 0;
+    .portrait-container {
+      position: relative;
       width: 100%;
-      max-width: 599px;
-      text-align: start;
-    }
-
-    .about-me-container {
       display: flex;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      max-height: 612px;
-      max-width: 599px;
-      background-color: whitesmoke;
-      margin-bottom: 5em;
+      justify-content: flex-end;
+      margin-bottom: 10em;
 
-      h2 {
-        text-align: start;
+      .img-layer-top {
+        max-height: 600px;
+        height: 100%;
+        max-width: 550px;
         width: 100%;
-        padding: 2em;
+        border-radius: 35px;
       }
     }
   }
 
-  .portrait-container {
+  .about-wrapper {
+    flex: 1;
     display: flex;
-    justify-content: center;
-    margin-top: 5em;
+    flex-direction: column;
+    justify-content: end;
+    max-height: 600px;
+    height: 100%;
 
-    img {
-      max-height: 612px;
-      max-width: 599px;
-      height: 100%;
+    h1 {
+      display: flex;
+      align-items: center;
+      height: 10%;
+      max-width: 550px;
       width: 100%;
+      color: whitesmoke;
+    }
+
+    .about-me-container {
+      height: 90%;
+      max-width: 550px;
+      width: 100%;
+      background-color: black;
+      border-radius: 50px;
+
+      h2 {
+        padding: 0.5em 0 0 0.5em;
+        color: whitesmoke;
+        font-size: 4rem;
+      }
+
+      p {
+        color: whitesmoke;
+        text-wrap: wrap;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        padding: 1em 2em 0.5em 2em;
+      }
     }
   }
 }
