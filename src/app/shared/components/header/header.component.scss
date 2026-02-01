@@ -20,35 +20,35 @@ header {
       cursor: pointer;
     }
   }
+}
 
-  .img-wrap {
-    position: relative;
+.img-wrap {
+  position: relative;
 
-    img {
-      width: 175px;
-      cursor: pointer;
-    }
+  img {
+    width: 175px;
+    cursor: pointer;
+  }
+}
 
-    .img-normal {
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
+.img-normal {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 
-    .img-hover {
-      position: absolute;
-      opacity: 0;
-      top: 0%;
-      left: 0%;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
+  &:hover {
+    opacity: 0;
+  }
+}
 
-    &:hover .img-normal {
-      opacity: 0;
-    }
+.img-hover {
+  position: absolute;
+  opacity: 0;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 
-    &:hover .img-hover {
-      opacity: 1;
-    }
+  &:hover {
+    opacity: 1;
   }
 }
