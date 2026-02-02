@@ -4,8 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  max-height: 1000px;
-  height: 100%;
+  min-height: 80vh;
   padding: 0 2rem;
 }
 
@@ -20,24 +19,23 @@
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
   margin-bottom: 10rem;
   overflow: hidden;
 }
 
 .img-layer-top {
   max-height: 600px;
-  height: 100%;
   max-width: 550px;
   width: 100%;
-  border-radius: 35px;
+  border-radius: 25px;
 }
 
 .about-wrapper {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  // justify-content: end;
   align-items: end;
   max-height: 600px;
   height: 100%;
@@ -46,7 +44,6 @@
 h1 {
   display: flex;
   align-items: center;
-  height: 10%;
   max-width: 550px;
   width: 100%;
   color: whitesmoke;
@@ -58,7 +55,7 @@ h1 {
   max-width: 550px;
   width: 100%;
   background-color: black;
-  border-radius: 35px;
+  border-radius: 25px;
   padding: 2rem 2.5rem;
 }
 
@@ -80,7 +77,7 @@ p {
   .section-wrapper-about {
     flex-direction: column;
     max-height: fit-content;
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
     position: relative;
   }
 
@@ -98,7 +95,7 @@ p {
   .about-wrapper {
     max-width: 612px;
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 8rem;
   }
 
   h1 {
@@ -114,7 +111,7 @@ p {
 
 @media (max-width: 768px) {
   .section-wrapper-about {
-    padding: 5rem;
+    padding: 5rem 5rem 0;
   }
 
   p {

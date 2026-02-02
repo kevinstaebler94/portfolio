@@ -1,9 +1,27 @@
 <section class="section-wrapper-skills">
-  <div class="headline-wrapper">
+  <div class="skill-set-text-wrapper">
     <h1>Technologies</h1>
+    <div class="skill-set-text-container">
+      <h2>Skill Set</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore
+        assumenda dolorem, reprehenderit aliquid doloremque delectus iure ut
+        vitae sed voluptatem fugit accusamus quo qui minima incidunt voluptates
+        pariatur error labore! Pariatur, id maiores! Minus corporis magnam nemo
+        fugit reiciendis sunt rem, tenetur ullam inventore repellendus nulla,
+        quae illum quaerat nesciunt animi eum dolores corrupti architecto
+        mollitia sequi laborum quod. In. Dolorem assumenda in.
+      </p>
+    </div>
   </div>
-  <div class="skill-set-wrapper">
-    <div class="skill-set-container"></div>
-    <div class="skill-set-icon-container"></div>
+  <div class="skill-set-icon-wrapper">
+    <div class="skill-set-icon-container">
+      @for (skill of skills; track skill.name) {
+        <div class="skill-card">
+          <img [src]="skill.icon" />
+          <p>{{ skill.name }}</p>
+        </div>
+      }
+    </div>
   </div>
 </section>
