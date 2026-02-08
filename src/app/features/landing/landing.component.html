@@ -8,9 +8,12 @@
       <span>Contact me</span>
     </div>
     <div class="cross-layer-container">
-      <span>Available for remote work</span>
-      <span>Frontend Developer</span>
-      <span>Based in Stolberg</span>
+      <span>
+        @for (text of repeatedBannerTexts; track $index) {
+          {{ text }}
+          <img src="assets/icons/radio-button.svg" alt="•" />
+        }
+      </span>
     </div>
   </section>
 </div>

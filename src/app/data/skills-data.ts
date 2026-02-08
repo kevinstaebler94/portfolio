@@ -13,7 +13,7 @@ export const skillsData = [
   },
   {
     name: "Material Design",
-    icon: "assets/icons/Growth-Mindset.svg",
+    icon: "assets/icons/Material-Design.svg",
   },
   {
     name: "TypeScript",

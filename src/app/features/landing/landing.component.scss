@@ -9,6 +9,7 @@
     #104943 72%,
     #0b4d42 100%
   );
+  overflow-x: hidden;
 }
 
 .title-container {
@@ -48,19 +49,63 @@ h2 {
 
 .cross-layer-container {
   background-color: blueviolet;
-  width: 100.1%;
+  width: 120%;
   height: fit-content;
   order: 4;
   transform: rotate(-2.5deg);
-  margin: 20em 0 2.5em 0;
+  margin: 20em 0 2.5em -10%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: rgb(67, 67, 67, 0.65);
+  overflow: hidden;
 
   span {
+    display: inline-block;
     font-size: 2rem;
     color: #3dcfb6;
-    padding: 0.45em 0;
+    padding: 0.5em 0;
+    white-space: nowrap;
+    animation: slide 12s linear infinite;
+
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  img {
+    margin: 0 5rem;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 768px) {
+  .title-container {
+    h1 {
+      font-size: 8.5rem;
+    }
+
+    h2 {
+      font-size: 3.25rem;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .title-container {
+    h1 {
+      font-size: 8rem;
+    }
+  }
+
+  .btn-container {
+    span {
+      font-size: 2rem;
+    }
   }
 }

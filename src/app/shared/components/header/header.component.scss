@@ -13,7 +13,11 @@ header {
     img {
       width: 90px;
     }
+  }
 
+  .nav-links {
+    display: flex;
+    gap: 2rem;
     a {
       text-decoration: none;
       color: whitesmoke;
@@ -51,4 +55,29 @@ header {
   &:hover {
     opacity: 1;
   }
+}
+
+.dNone {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .img-wrap {
+    img {
+      width: 150px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .img-wrap {
+    img {
+      width: 125px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 680px) {
 }
