@@ -1,4 +1,9 @@
-export const aboutData = [
+export interface AboutCard {
+  icon: string;
+  text: string;
+}
+
+export const aboutData: AboutCard[] = [
   {
     icon: "assets/icons/location-work_model.svg",
     text: "Based in Germany and open to remote or on-site work.",

@@ -1,50 +1,30 @@
 <section class="section-wrapper-projects">
-  <div class="headline-wrapper">
+  <header class="headline-wrapper">
     <h1>Featured Projects</h1>
     <h2>Portfolio</h2>
     <p>
       Explore a selection of my work here - Interact with <br />
       projects to see my skills in action.
     </p>
-  </div>
+  </header>
   <div class="portfolio-wrapper">
-    <div class="project-container">
-      <div class="project">
-        <h1>Join</h1>
-        <div class="languages">
-          <p>HTML</p>
-          <span>|</span>
-          <p>CSS</p>
-          <span>|</span>
-          <p>JavaScript</p>
-          <span></span>
-        </div>
-      </div>
-      <div class="project">
-        <h1>El Pollo Loco</h1>
-        <div class="languages">
-          <p>HTML</p>
-          <span>|</span>
-          <p>CSS</p>
-          <span>|</span>
-          <p>JavaScript</p>
-          <span></span>
-        </div>
-      </div>
-      <div class="project">
-        <h1>Join</h1>
-        <div class="languages">
-          <p>HTML</p>
-          <span>|</span>
-          <p>CSS</p>
-          <span>|</span>
-          <p>JavaScript</p>
-          <span></span>
-        </div>
-      </div>
-    </div>
-    <div class="project-image-container">
-      <div class="preview-container"></div>
-    </div>
+    <section class="project-container">
+      @for (project of projects; track project.name) {
+        <article class="project">
+          <h3>{{ project.name }}</h3>
+          <div class="languages">
+            @for (skill of project.skills; track $index) {
+              <p>{{ skill }}</p>
+              @if ($index < project.skills.length - 1) {
+                <span>|</span>
+              }
+            }
+          </div>
+          <div class="project-image-container">
+            <div class="preview-container"></div>
+          </div>
+        </article>
+      }
+    </section>
   </div>
 </section>

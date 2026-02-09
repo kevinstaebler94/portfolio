@@ -1,4 +1,4 @@
-export const bannerTexts = [
+export const bannerTexts: string[] = [
   "Available for remote work",
   "Frontend Developer",
   "Based in Stolberg",

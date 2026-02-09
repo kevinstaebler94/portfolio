@@ -1,4 +1,9 @@
-export const skillsData = [
+export interface Skill {
+  name: string;
+  icon: string;
+}
+
+export const skillsData: Skill[] = [
   {
     name: "HTML",
     icon: "assets/icons/HTML.svg",
